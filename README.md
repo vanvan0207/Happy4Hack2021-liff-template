@@ -27,7 +27,8 @@ az configure --defaults group=${group_name}
 az deployment group create --name deployPrj02 --template-file main.bicep \
   --parameters ramdom=<ramdom> \
   --parameters liffid=<liffid> \
-  --parameters token=<token>
+  --parameters token=<token> \
+  --parameters repositoryUrl='<GitHub Reposigory URL>'
   
 az deployment group show \
   -g ${group_name} \

@@ -4,10 +4,10 @@ param location string = resourceGroup().location
 param ramdom string
 param liffid string
 param token string
+param repositoryUrl string
 
 var appInsightsName = 'AppInsights'
 var swaName = 'swa-${toLower(ramdom)}'
-var repositoryUrl = 'https://github.com/mochan-tk/gitpod-swa.git'
 
 
 resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
