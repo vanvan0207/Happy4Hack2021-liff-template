@@ -8,7 +8,7 @@ az upgrade
 az bicep install
 #az bicep version
 
-az login
+az login --use-device-code
 
  az account list \
    --refresh \
